@@ -1,1 +1,1 @@
-export const ServerAPI = 'https://genre-gliderserver.vercel.app/';
+export const ServerAPI = 'https://genre-gliderserver.vercel.app';
