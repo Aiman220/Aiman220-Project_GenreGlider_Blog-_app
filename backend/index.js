@@ -38,5 +38,12 @@ app.post('/upload', upload.single("image"), async(req, res) => {
     return res.status(200).json({msg: "Successfully uploaded"})
 })
 
-// connect server
-app.listen(process.env.PORT, () => console.log('Server has been started successfully'))
+app.get('/home', (req, res) => {
+    res.status(200).json('Welcome, your app is working well');
+  })
+  
+  // connect server
+  
+  app.listen(process.env.PORT, () =>{
+    console.log('Server has been started successfully');
+  });
