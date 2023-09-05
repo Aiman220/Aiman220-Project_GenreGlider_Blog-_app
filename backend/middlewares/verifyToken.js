@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-
+jjwt= process.env.JWT_SECRET || "dfa";
 const verifyToken = (req, res, next) => {
     console.log(req.headers)
     if(!req.headers.authorization) return res.status(403).json({msg: "Not authorized. No token"})
