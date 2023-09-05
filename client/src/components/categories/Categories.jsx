@@ -8,7 +8,7 @@ import classes from './categories.module.css'
 import { MdOutlinePreview } from 'react-icons/md'
 import { AiFillLike } from 'react-icons/ai'
 import { FiArrowRight } from 'react-icons/fi'
-import { ServerAPI } from "../../../serverLink";
+import { ServerAPI } from "../../serverLink";
 
 const Categories = () => {
   const [blogs, setBlogs] = useState([])
