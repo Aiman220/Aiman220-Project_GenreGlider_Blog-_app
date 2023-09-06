@@ -8,7 +8,8 @@ const multer = require('multer')
 const app = express()
 
 // connect db
-mongoose.connect ("mongodb+srv://loop:loop@cluster0.mfhexe4.mongodb.net/test?retryWrites=true&w=majority")
+mongoose.set('strictQuery', false);
+mongoose.connect ("mongodb+srv://loop:loop@cluster0.mfhexe4.mongodb.net/test?retryWrites=true&w=majority", () => console.log('MongoDB has been started successfully'))
 
 app.use(cors(
     {
