@@ -1,5 +1,5 @@
 footer {
-    padding-top: 1rem;
+    padding-top: 1.2rem;
     background-color: #132a5a;
     color: #a7a7a7;
     font-size: 16px;
@@ -60,7 +60,7 @@ footer {
 .col > p{
     max-width: 425px;
     color: rgb(236, 233, 233);
-    font-size: 15px;
+    font-size: 13px;
     font-family: "Poppins", sans-serif;
 }
 
