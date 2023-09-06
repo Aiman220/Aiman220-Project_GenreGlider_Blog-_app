@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URL, () => console.log('MongoDB has been star
 
 app.use(cors(
     {
-        origin: ['https://genregliderserver.vercel.app/']
+        origin: ['https://genreglider.vercel.app']
     }
     ));
 
