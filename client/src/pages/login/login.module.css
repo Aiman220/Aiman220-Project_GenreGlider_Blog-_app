@@ -60,3 +60,27 @@ form>button:hover{
     border-color: blue;
     color: blue;
 }
+
+@media screen and (max-width: 1150px) {
+
+    .wrapper{
+        height: 44vh;
+        width: 65vw;
+    }
+    
+    .wrapper > h2{
+        color: #171097;
+        text-align: center;
+        margin: 2.5rem 0;
+        font-size: 36px;
+    }
+    
+    .wrapper > form > input{
+        width: 55%;
+    }
+    
+    .wrapper > form > button{
+        padding: 0.9rem 2rem;
+        margin-top: 0.7rem;
+    }
+}
