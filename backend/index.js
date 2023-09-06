@@ -11,6 +11,12 @@ const app = express()
 mongoose.set('strictQuery', false);
 mongoose.connect(process.env.MONGO_URL, () => console.log('MongoDB has been started successfully'))
 
+app.use(cors(
+    {
+        origin: ['https://genreglider.vercel.app']
+    }
+    ));
+
 // routes
 app.use('/images', express.static('public/images'))
 port = process.env.PORT || 3333;
