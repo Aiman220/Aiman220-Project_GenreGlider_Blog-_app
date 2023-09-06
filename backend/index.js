@@ -8,12 +8,13 @@ const multer = require('multer')
 const app = express()
 
 // connect db
-mongoose.set('strictQuery', false);
-mongoose.connect(process.env.MONGO_URL, () => console.log('MongoDB has been started successfully'))
+mongoose.connect ("mongodb+srv://loop:loop@cluster0.mfhexe4.mongodb.net/test?retryWrites=true&w=majority")
 
 app.use(cors(
     {
-        origin: ['https://genreglider.vercel.app']
+        origin: ["https://genreglider.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
     }
     ));
 
@@ -44,8 +45,8 @@ app.post('/upload', upload.single("image"), async(req, res) => {
     return res.status(200).json({msg: "Successfully uploaded"})
 })
 
-app.get('/home', (req, res) => {
-    res.status(200).json('Welcome, your app is working well');
+app.get('/', (req, res) => {
+    res.status(200).json('Welcome, server is working well');
   })
   
   // connect server
