@@ -181,6 +181,14 @@
         font-size: 25px;
 
     }
+    .blogDesc {
+        font-size: 15px;
+        line-height: 29px;
+        letter-spacing: 0.70px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 
