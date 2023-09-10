@@ -4,8 +4,8 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url('../../assets/mountain1.jpg');
-    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url('../../assets/mountain2.jpg');
+    background-color: rgba(0, 0, 0, 0.3);
     background-size: cover;
     background-blend-mode: darken;
     display: flex;
@@ -14,8 +14,8 @@
 }
 
 .wrapper{
-    height: 59vh;
-    width: 25vw;
+    height: 63.5vh;
+    width: 27.5vw;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -52,19 +52,32 @@ form > button{
     font-size: 18px;
     cursor: pointer;
     border: 1px solid transparent;
-    margin-top: 1rem;
 }
 
-form>button:hover{
+form > button:hover{
     background-color: #fff;
     border-color: blue;
     color: blue;
 }
 
+form > p{
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form > p > a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #888;
+    margin-top: 0.25rem;
+}
 @media screen and (max-width: 1150px) {
 
     .wrapper{
-        height: 48vh;
+        height: 58vh;
         width: 65vw;
     }
     
