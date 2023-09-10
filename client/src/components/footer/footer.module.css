@@ -1,11 +1,10 @@
 footer {
-    padding-top: 1.4rem;
+    padding-top: 1.6rem;
     background-color: #132a5a;
     color: #a7a7a7;
     font-size: 16px;
     padding: auto;
     height: auto;
-    padding: auto;
     
   }
   footer * {
@@ -31,6 +30,8 @@ footer {
     gap: 0.5rem;
     color: rgb(236, 233, 233);
     font-size: 15px;
+
+    
 }
 .col > ul {
     list-style: none;
@@ -56,16 +57,14 @@ footer {
     color: white;
     
 }
-
 .col > p{
     max-width: 425px;
     color: rgb(236, 233, 233);
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    
+    
   
 }
-
-
 .copyright {
     margin-top: 1rem;
     padding: 0.5em 1.2em;
@@ -79,26 +78,20 @@ footer {
 
 @media screen and (max-width: 1150px) {
    
-   
     .col > h2{
         font-size: 15px;
-        
     }
     
     .col > p{
-        font-size: 10px;
-        
+        font-size: 10px; 
     }
 
     .col > span{
         font-size: 10px;
-        
     }
     .col{
         padding-bottom: 1rem;
         font-size: 10px;
-        
-        
     }
     .wrapper{
     display: flex;
